@@ -98,8 +98,8 @@ public class UserDao {
     }
 
     private User[] addToArray(User u, User[] users) {
-        User[] tmpUsers = Arrays.copyOf(users, users.length + 1); // Tworzymy kopię tablicy powiększoną o 1.
-        tmpUsers[users.length] = u; // Dodajemy obiekt na ostatniej pozycji.
+        User[] tmpUsers = Arrays.copyOf(users, users.length + 1);
+        tmpUsers[users.length] = u;
         return tmpUsers;
 
     }
